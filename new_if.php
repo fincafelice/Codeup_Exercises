@@ -9,23 +9,23 @@ $c = '10';
 if ($a < $b) {
     // output the appropriate result
     echo "$a is less than $b\n";
-	}
+}
 
-	elseif ($a > $b) {
+elseif ($a > $b) {
     // output the appropriate result
     echo "$b is greater than $a\n";
-	}
+}
 
 // Shorten the next 2 statements into an if/else
 if ($b >= $c) {
     // output the appropriate result
     echo "$b is >= $c\n";
-	}
+}
 
-	elseif ($b <= $c) {
+elseif ($b <= $c) {
     // output the appropriate result
     echo "$b is <= $c\n";
-	}
+}
 
 // combine the next 4 conditionals into
 // one if/else/elseif block that checks in order for:
@@ -33,19 +33,19 @@ if ($b >= $c) {
 if ($b === $c) {
     // output the appropriate result
     echo "$b is identical to $c\n";
-	}
+}
 
-	elseif ($b == $c) {
+elseif ($b == $c) {
     // output the appropriate result
     echo "$b is equal to $c\n";
-	}
+}
 
-	elseif ($b !== $c) {
+elseif ($b !== $c) {
     // output the appropriate result
     echo "$b is not identical to $c\n";
-	}
+}
 
-	elseif ($b != $c) {
+elseif ($b != $c) {
     // output the appropriate result
     echo "$b is not equal to $c\n";
 }
