@@ -7,9 +7,21 @@
 
 fwrite(STDOUT, 'Enter a beginning number:  ');
 $userStart = trim(fgets(STDIN));
+// return error if not numerical
+if (!is_numeric($userStart)) {
+	echo "Please enter a whole number\n";
+	fwrite(STDOUT, 'Enter a beginning number:  ');
+	$userStart = trim(fgets(STDIN));
+}
+
 fwrite(STDOUT, 'Enter an ending number:  ');
 $userEnd = trim(fgets(STDIN));
-
+// return error if not numerical
+if (!is_numeric($userEnd)) {
+	echo "Please enter a whole number\n";
+	fwrite(STDOUT, 'Enter an ending number:  ');
+	$userEnd = trim(fgets(STDIN));
+}
 // Edit where user chooses increment.
 fwrite(STDOUT, 'Enter the increment value:   ');
 $userIncrm = trim(fgets(STDIN));
