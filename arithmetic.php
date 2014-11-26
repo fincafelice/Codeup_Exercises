@@ -6,11 +6,19 @@
 
 // *Make the error messages show the values of the arguments.
 
+// *Refactor the error messages into their own function, 
+// have the other functions use it for error messaging.
+
+function errorMsg ($a, $b) {
+	echo "ERROR: Please enter numbers only. . $a . $b\n";
+}
+
 function add($a, $b) {
 	if (is_numeric($a) && is_numeric($b)) {
     	echo ($a + $b) . PHP_EOL;
 	} else {
-		echo "ERROR: Please enter numbers only. . $a . $b\n";
+		errorMsg ($a, $b);
+		// echo "ERROR: Please enter numbers only. . $a . $b\n";
 	}
 }
 
@@ -18,7 +26,8 @@ function subtract($a, $b) {
     if (is_numeric($a) && is_numeric($b)) {
     	echo ($a - $b) . PHP_EOL;
 	} else {
-		echo "ERROR: Please enter numbers only. . $a . $b\n";
+		errorMsg ($a, $b);
+		// echo "ERROR: Please enter numbers only. . $a . $b\n";
 	}
 }
 
@@ -27,7 +36,8 @@ function multiply($a, $b) {
     if (is_numeric($a) && is_numeric($b)) {
     	echo ($a * $b) . PHP_EOL;
 	} else {
-		echo "ERROR: Please enter numbers only. . $a . $b\n";
+		errorMsg ($a, $b);
+		// echo "ERROR: Please enter numbers only. . $a . $b\n";
 	}
 }
 // *Validate divide by 0 errors, display error if 
@@ -39,7 +49,8 @@ function divide($a, $b) {
 	} elseif (is_numeric($a) && is_numeric($b)) {
     	echo ($a / $b) . PHP_EOL;
 	}  else {
-		echo "ERROR: Please enter numbers only. . $a . $b\n";
+		errorMsg ($a, $b);
+		// echo "ERROR: Please enter numbers only. . $a . $b\n";
 	}
 }
 
@@ -47,12 +58,13 @@ function modulus ($a, $b) {
 	if (is_numeric($a) && is_numeric($b)) {
 		echo ($a % $b) . PHP_EOL;
 	} else {
-		echo "ERROR: Please enter numbers only. . $a . $b\n";
+		errorMsg ($a, $b);
+		// echo "ERROR: Please enter numbers only. . $a . $b\n";
 	}
 }
    
-add('p', 'o');
+add(4,6);
 subtract('h', 'j');
 multiply ('n', 'd');
-divide (3, 0);
-modulus ('q', 'v');
+divide (3,0);
+modulus (4,5);

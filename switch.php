@@ -8,11 +8,11 @@
  $dayOfWeek = date('N');
 
  switch($dayOfWeek) {
-     case 1:
+    case 1:
          // Output Monday
      	echo '1' . PHP_EOL;
      	break;
-     case 2:
+    case 2:
      	echo'2' . PHP_EOL;
      	break;
  	case 3:
@@ -33,3 +33,10 @@
          // Output Tuesday
      // etc through day 7
  }
+
+if ($dayOfWeek = 3) {
+	echo '3'. PHP_EOL;
+} else {
+	echo 'Today is another day.';
+}
+
