@@ -28,11 +28,15 @@ function multiply($a, $b) {
 		echo "ERROR: Please enter numbers only.\n";
 	}
 }
+// *Validate divide by 0 errors, display error if 
+// attempts to divide by 0 are made.
 
 function divide($a, $b) {
-    if (is_numeric($a) && is_numeric($b)) {
+	if ($b == 0) {
+		echo "DIVISOR can not be zero. \n";
+	} elseif (is_numeric($a) && is_numeric($b)) {
     	echo ($a / $b) . PHP_EOL;
-	} else {
+	}  else {
 		echo "ERROR: Please enter numbers only.\n";
 	}
 }
@@ -48,5 +52,5 @@ function modulus ($a, $b) {
 add('p', 'o');
 subtract('h', 'j');
 multiply ('n', 'd');
-divide ('e', 'w');
+divide (3, 0);
 modulus ('q', 'v');
