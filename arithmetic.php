@@ -1,29 +1,52 @@
 <?php
 
 // User defined functions.
+// *Validate all the arguments, and display an error if 
+// the input is not numeric.
 
 function add($a, $b) {
-    echo ($a + $b) . PHP_EOL;
+	if (is_numeric($a) && is_numeric($b)) {
+    	echo ($a + $b) . PHP_EOL;
+	} else {
+		echo "ERROR: Please enter numbers only.\n";
+	}
 }
 
 function subtract($a, $b) {
-    echo ($a - $b) . PHP_EOL;
+    if (is_numeric($a) && is_numeric($b)) {
+    	echo ($a - $b) . PHP_EOL;
+	} else {
+		echo "ERROR: Please enter numbers only.\n";
+	}
 }
 
+
 function multiply($a, $b) {
-    echo ($a * $b) . PHP_EOL;
+    if (is_numeric($a) && is_numeric($b)) {
+    	echo ($a * $b) . PHP_EOL;
+	} else {
+		echo "ERROR: Please enter numbers only.\n";
+	}
 }
 
 function divide($a, $b) {
-    echo ($a / $b) . PHP_EOL;
+    if (is_numeric($a) && is_numeric($b)) {
+    	echo ($a / $b) . PHP_EOL;
+	} else {
+		echo "ERROR: Please enter numbers only.\n";
+	}
 }
 
 function modulus ($a, $b) {
-	echo ($a % $b) . PHP_EOL;
+	if (is_numeric($a) && is_numeric($b)) {
+		echo ($a % $b) . PHP_EOL;
+	} else {
+		echo "ERROR: Please enter numbers only.\n";
+	}
 }
 
-add(5,6);
-subtract(8,6);
-multiply (4,3);
-divide (25,5);
-modulus (4,3);
+add('p', 'o');
+subtract('h', 'j');
+multiply ('n', 'd');
+divide ('e', 'w');
+modulus ('q', 'v');
