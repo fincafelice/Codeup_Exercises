@@ -6,17 +6,17 @@ $c = '10';
 
 if ($a < $b) {
     // output the appropriate result
-    echo "$a is ____ $b\n";
+    echo "$a is less than $b\n";
 }
 
 if ($b > $a) {
     // output the appropriate result
-    echo "$b is ____ $a\n";
+    echo "$b is greater than $a\n";
 }
 
 if ($b >= $c) {
     // output the appropriate result
-    echo "$b is ____ $c\n";
+    echo "$b is greater than or equal to $c\n";
 }
 
 if ($b <= $c) {
@@ -26,7 +26,7 @@ if ($b <= $c) {
 
 if ($b == $c) {
     // output the appropriate result
-    echo "$b is is equal to $c\n";
+    echo "$b is equal to $c\n";
 }
 
 if ($b === $c) {
