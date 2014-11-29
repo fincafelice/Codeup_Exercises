@@ -48,7 +48,10 @@ function multiply($a, $b) {
 
 function divide($a, $b) {
 	if ($b == 0) {
-		echo "DIVISOR can not be zero.\n";
+		// validate divide by zero error
+		return "You can't divide by zero!\n";
+		// return (False); // return false if divide by 0 is attempted
+		// echo "DIVISOR can not be zero.\n";
 	} elseif (is_numeric($a) && is_numeric($b)) {
     	// refactor to return the result
     	return ($a / $b) . PHP_EOL;
@@ -68,8 +71,8 @@ function modulus ($a, $b) {
 	}
 }
    
-add(4,6);
-subtract(6,4);
-multiply ('n',0);
-divide (3,0);
-modulus (4,5);
+echo add(4,6);
+echo subtract(6,4);
+echo multiply (3,2);
+echo divide (4,2);
+echo modulus (4,5);
