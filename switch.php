@@ -34,9 +34,9 @@
      // etc through day 7
  }
 
-if ($dayOfWeek = 3) {
-	echo '3'. PHP_EOL;
+if ($dayOfWeek == 3) {
+	echo 'Today is Wednesday.'. PHP_EOL;
 } else {
-	echo 'Today is another day.';
+	echo 'Today is another day.' . PHP_EOL;
 }
 
