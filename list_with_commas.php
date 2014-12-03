@@ -12,6 +12,7 @@ function humanizedList ($physicistsString) {
 
 	$endingName = 'and Tony Stark';
 	array_push($explodePhysicistsString, $endingName);
+	sort($explodePhysicistsString);
 	// print_r($explodePhysicistsString);
 
 	$famousFakePhysicists = implode (", ", $explodePhysicistsString);
